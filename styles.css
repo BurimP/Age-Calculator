@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@500&family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@500&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@500&family=Poppins:ital,wght@1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 86%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 40rem;
+  width: 52rem;
+  background-color: white;
+  border-radius: 25px;
+  border-bottom-right-radius: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-items {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.top-bar {
+  min-height: 23%;
+  display: flex;
+
+  align-items: flex-end;
+}
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.date-input-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  opacity: 50%;
+}
+
+.date-input-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 4rem;
+  font-family: "Poppins", sans-serif;
+  width: 9rem;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.bottom-label {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  transform: translateY(80%);
+  padding: 0;
+  margin: 0;
+  border: none;
+  opacity: 0;
+}
+
+/* ==========MIDDLE============= */
+
+.middle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15%;
+}
+
+.line {
+  height: 2px;
+  width: 38rem;
+  background-color: rgb(211, 211, 211);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  background-color: hsl(259, 100%, 65%);
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+.circle:active {
+  background-color: hsla(259, 100%, 65%, 0.5);
+}
+
+/* ===========Bottom============= */
+
+.bottom {
+  height: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bottom-content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-10%);
+}
+
+.year {
+  display: flex;
+  justify-content: flex-start;
+  height: 25%;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+.year-num {
+  font-size: 6.5rem;
+  color: hsl(259, 100%, 65%);
+}
+.year-text {
+  font-size: 6.5rem;
+}
+
+.month {
+  display: flex;
+  height: 25%;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+.month-num {
+  font-size: 6.5rem;
+  color: hsl(259, 100%, 65%);
+}
+.month-text {
+  font-size: 6.5rem;
+}
+
+.day {
+  display: flex;
+  height: 25%;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+.day-num {
+  font-size: 6.5rem;
+  color: hsl(259, 100%, 65%);
+}
+.day-text {
+  font-size: 6.5rem;
+}
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/* ===============Mobile Version============== */
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+  .line {
+    width: 100%;
+  }
+
+  .container {
+    height: 50rem;
+    width: 35rem;
+  }
+
+  .year-num {
+    font-size: 5.5rem;
+  }
+  .year-text {
+    font-size: 5.5rem;
+  }
+
+  .month-num {
+    font-size: 5.5rem;
+  }
+  .month-text {
+    font-size: 5.5rem;
+  }
+
+  .day-num {
+    font-size: 5.5rem;
+  }
+  .day-text {
+    font-size: 5.5rem;
+  }
+
+  .middle {
+    width: 100%;
+  }
+
+  .circle {
+    transform: translateX(-250%);
+  }
+
+  .bottom-content {
+    justify-content: center;
+  }
+}
+/* ========== RED CONTENT========== */
+
+.red-text {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  /* opacity: 50%; */
+}
+.red-input {
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 8px;
+  height: 4rem;
+  font-family: "Poppins", sans-serif;
+  width: 9rem;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+.red-bottom-label {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  transform: translateY(80%);
+  padding: 0;
+  margin: 0;
+  border: none;
+  opacity: 100;
+  color: red;
+}

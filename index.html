@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="all-items">
+          <div class="top-bar">
+            <div class="top-content">
+              <div class="date-input">
+                <label for="day" id="day-label" class="date-input-label"
+                  >DAY</label
+                >
+                <input
+                  class="date-input-input"
+                  type="number"
+                  id="day-data"
+                  min="1"
+                  max="31"
+                  placeholder="DD"
+                  required
+                />
+                <label class="bottom-label" id="bottom-label"
+                  >Must be a valid day</label
+                >
+              </div>
+
+              <div class="date-input">
+                <label for="month" id="month-label" class="date-input-label"
+                  >MONTH</label
+                >
+                <input
+                  class="date-input-input"
+                  type="number"
+                  id="month-data"
+                  min="1"
+                  max="12"
+                  placeholder="MM"
+                  required
+                />
+                <label class="bottom-label" id="second-bottom-label"
+                  >Must be a valid month</label
+                >
+              </div>
+
+              <div class="date-input">
+                <label for="year" id="year-label" class="date-input-label"
+                  >YEAR</label
+                >
+                <input
+                  class="date-input-input"
+                  type="number"
+                  id="year-data"
+                  min="1800"
+                  max="2023"
+                  placeholder="YYYY"
+                  required
+                />
+                <label class="bottom-label" id="third-bottom-label"
+                  >Must be in the past</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="line"></div>
+            <div class="circle" id="circle">
+              <img src="assets\images\icon-arrow.svg" alt="" class="icon" />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="bottom-content">
+              <div class="year">
+                <p class="year-num" id="year-num">--</p>
+                <p class="year-text">years</p>
+              </div>
+              <div class="month">
+                <p class="month-num" id="month-num">--</p>
+                <p class="month-text">months</p>
+              </div>
+              <div class="day">
+                <p class="day-num" id="day-num">--</p>
+                <p class="day-text">days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
