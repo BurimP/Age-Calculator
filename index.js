@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentMonth = new Date().getMonth() + 1;
   const currentDate = new Date().getDate();
 
+  const currentMonthDays = new Date(currentYear, currentMonth, 0).getDate();
+
   // =====Calculations=====
 
   circle.addEventListener("click", () => {
@@ -81,12 +83,48 @@ document.addEventListener("DOMContentLoaded", function () {
     let yearSubtraction = 0;
     let monthSubtraction = 0;
     let daySubtraction = 0;
+    const numberOfMonths = 12;
 
-    console.log(numDayData, numMonthData, numYearData);
-    console.log(
-      typeof parseInt(numDayData),
-      typeof parseInt(numMonthData),
-      typeof parseInt(numYearData)
-    );
+    let days = 0;
+    let months = 0;
+    let years = 0;
+
+    daySubtraction = currentDate - parseInt(numDayData);
+    console.log(daySubtraction);
+    if (daySubtraction < 0) {
+      daySubtraction *= -1;
+      monthSubtraction -= 1;
+      days = currentMonthDays - daySubtraction;
+    } else {
+      days = currentDate - parseInt(numDayData);
+      monthSubtraction = 0;
+    }
+
+    console.log("Days: ", days);
+    console.log("monthSub: ", monthSubtraction);
+    console.log("month sub: ", monthSubtraction);
+    if (monthSubtraction >= 0) {
+      months = currentMonth - parseInt(numMonthData);
+      if (months < 0) {
+        months =
+          numberOfMonths + currentMonth - numMonthData + monthSubtraction;
+        yearSubtraction -= 1;
+      }
+    }
+
+    if (monthSubtraction < 0) {
+      yearSubtraction -= 1;
+
+      months = numberOfMonths + currentMonth - numMonthData + monthSubtraction;
+    }
+
+    console.log("Months: ", months);
+
+    years = currentYear - numYearData + yearSubtraction;
+    console.log("Years: ", years);
+
+    dayNum.innerHTML = days;
+    monthNum.innerHTML = months;
+    yearNum.innerHTML = years;
   });
 });

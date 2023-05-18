@@ -116,7 +116,7 @@ body {
 }
 
 .circle:active {
-  background-color: hsla(259, 100%, 65%, 0.5);
+  background-color: black;
 }
 
 /* ===========Bottom============= */
