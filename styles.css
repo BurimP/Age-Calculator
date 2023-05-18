@@ -194,22 +194,35 @@ body {
   html {
     font-size: 12px;
   }
+  .container {
+    height: 50rem;
+  }
 }
 
 @media screen and (max-width: 630px) {
   html {
     font-size: 10px;
   }
+  .container {
+    height: 70rem;
+  }
 }
 @media screen and (max-width: 530px) {
   html {
     font-size: 8px;
+  }
+  .container {
+    height: 70rem;
   }
 }
 
 @media screen and (max-width: 420px) {
   html {
     font-size: 7px;
+  }
+
+  .container {
+    height: 70rem;
   }
 }
 
@@ -222,13 +235,17 @@ body {
   .middle {
     width: 100%;
   }
-  .line {
+  /* .line {
     width: 25rem;
     transform: translateX(7%);
+  } */
+  .line {
+    width: 25rem;
+    transform: translate(12%, 0%);
   }
 
   .container {
-    height: 50rem;
+    height: 70rem;
     width: 35rem;
   }
 
@@ -258,11 +275,15 @@ body {
   }
 
   .circle {
-    transform: translateX(-230%);
+    transform: translateX(-210%);
   }
 
   .bottom-content {
     justify-content: center;
+  }
+  .date-input-input {
+    height: 6rem;
+    margin-left: 0.6rem;
   }
 }
 
@@ -270,37 +291,63 @@ body {
   html {
     font-size: 8px;
   }
-}
-/* ========== RED CONTENT========== */
+  .date-input-input {
+    height: 6rem;
+    margin-left: 0.6rem;
+  }
+  .line {
+    width: 25rem;
+    transform: translate(12%, 0%);
+  }
 
-.red-text {
-  color: red;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.2rem;
-  /* opacity: 50%; */
-}
-.red-input {
-  padding: 5px;
-  border: 1px solid red;
-  border-radius: 8px;
-  height: 4rem;
-  font-family: "Poppins", sans-serif;
-  width: 9rem;
-  font-size: 1.5rem;
-  opacity: 80%;
-}
+  @media screen and (max-width: 280px) {
+    html {
+      font-size: 6px;
+    }
+    .date-input-input {
+      height: 6rem;
+    }
+  }
 
-.red-bottom-label {
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-  font-size: 0.8rem;
-  transform: translateY(80%);
-  padding: 0;
-  margin: 0;
-  border: none;
-  opacity: 100;
-  color: red;
+  @media screen and (max-width: 250px) {
+    html {
+      font-size: 6px;
+    }
+    .date-input-input {
+      height: 6rem;
+    }
+  }
+  /* ========== RED CONTENT========== */
+
+  .red-text {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    /* opacity: 50%; */
+  }
+  .red-input {
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 8px;
+    height: 4rem;
+    font-family: "Poppins", sans-serif;
+    width: 9rem;
+    font-size: 1.5rem;
+    opacity: 80%;
+  }
+
+  .red-bottom-label {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    transform: translateY(80%);
+    padding: 0;
+    margin: 0;
+    border: none;
+    opacity: 100;
+    color: red;
+  }
 }
