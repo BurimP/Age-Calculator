@@ -219,8 +219,12 @@ body {
   html {
     font-size: 10px;
   }
-  .line {
+  .middle {
     width: 100%;
+  }
+  .line {
+    width: 25rem;
+    transform: translateX(7%);
   }
 
   .container {
@@ -254,11 +258,17 @@ body {
   }
 
   .circle {
-    transform: translateX(-250%);
+    transform: translateX(-230%);
   }
 
   .bottom-content {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 8px;
   }
 }
 /* ========== RED CONTENT========== */

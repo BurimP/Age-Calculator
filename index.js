@@ -126,5 +126,19 @@ document.addEventListener("DOMContentLoaded", function () {
     dayNum.innerHTML = days;
     monthNum.innerHTML = months;
     yearNum.innerHTML = years;
+    console.log(numDayData);
+
+    if (
+      numDayData < 0 ||
+      numDayData > currentDate ||
+      numMonthData < 0 ||
+      numMonthData > 12 ||
+      numYearData < 0 ||
+      numYearData > currentYear
+    ) {
+      dayNum.innerHTML = "--";
+      monthNum.innerHTML = "--";
+      yearNum.innerHTML = "--";
+    }
   });
 });
